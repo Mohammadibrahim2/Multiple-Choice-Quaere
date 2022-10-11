@@ -17,7 +17,7 @@ return(
             <h2>{name}</h2>
             <h3>Quize:{total}</h3>
             <Link to={`/home/${id}`}>
-              <button className="button flex justify-around"><span>{name}</span>
+              <button className="button flex justify-between"><span>{name}</span>
               <ArrowRightIcon  className="w-6 h-6"></ArrowRightIcon> </button></Link>
            
 
