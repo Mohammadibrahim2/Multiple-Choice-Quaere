@@ -7,7 +7,7 @@ const TopicBasedQuizes=({quiz})=>{
 
     const {name,question,correctAnswer,options}=quiz
 
-    const notify = () => toast("the correct answer is :",correctAnswer);
+    const notify = () => toast(correctAnswer);
   
     const testResult=(ans)=>{
         const rightAwnser=ans.option
