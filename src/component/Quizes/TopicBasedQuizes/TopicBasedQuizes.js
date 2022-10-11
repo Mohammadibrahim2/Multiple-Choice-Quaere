@@ -15,10 +15,10 @@ const TopicBasedQuizes=({quiz})=>{
 console.log(rightAwnser)
 console.log(correctAnswer)
 if(rightAwnser===correctAnswer){
-    alert("answer correct")
+    const notify = () => toast("The answer is correct.");
 }
 else{
-    alert("answer is not correct")
+    const notify = () => toast("The answer is incorrect.")
 }
 
     };
