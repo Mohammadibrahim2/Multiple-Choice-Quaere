@@ -1,0 +1,40 @@
+.Navigation{
+    height: 80px;
+
+    background-image:linear-gradient(to bottom  right, #10255c,#38b3dd);
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    color:#fff;
+    margin-bottom: 50px;
+
+    
+}
+.Navigation h2{
+    font-size: 19x;
+}
+nav a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 5px 10px;
+
+
+}
+/* .Navlink a:hover{
+
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    margin-right: 40px;
+    padding: 5px 10px;
+
+   
+   
+
+   
+} */

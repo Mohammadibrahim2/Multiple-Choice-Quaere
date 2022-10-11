@@ -1,0 +1,45 @@
+.Heading{
+    height: 450px;
+    width: 100%;
+   margin: 0 auto;
+   background-image: url("../images/web-design.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   position: relative;
+}
+.Heading-info{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    color: #fff;
+}
+.Heading-btn{
+    padding: 6px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+@media screen and (max-width: 680px){
+    .Heading{
+        position: relative;
+    }
+
+    .Heading-info{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+        right:3%;
+        position: absolute;
+     
+        text-align: center;
+    }
+    .Heading-info p{
+        width: 190px;
+       text-align: center;
+
+    }
+
+}
