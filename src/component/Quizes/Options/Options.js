@@ -3,15 +3,16 @@ import "./Options.css";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Options=({option,testResult})=>{
-    const notify = () => toast("hellow!");
-  
+
+const Options=({option,testResult,notify})=>{
+
 return(
 
     <div>
 <div className="options my-6">
-<button onClick={notify}>
+
 <button onClick={()=>testResult({option})}>
+<button onClick={notify}>
 
 <p><input type="checkbox"/>{option}</p>
 </button>

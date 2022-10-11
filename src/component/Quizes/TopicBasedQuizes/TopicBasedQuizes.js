@@ -44,6 +44,7 @@ return(
 options.map(option=><Options
  option={option}
  testResult={testResult}
+ notify={notify}
 
  ></Options>)
 }
