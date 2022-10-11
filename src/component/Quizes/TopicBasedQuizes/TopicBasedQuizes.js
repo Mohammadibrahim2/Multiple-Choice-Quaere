@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Options from "../Options/Options";
-import { EyeIcon,ArrowRightIcon} from '@heroicons/react/24/solid'
+import { EyeIcon,ArrowRightIcon} from '@heroicons/react/24/solid';
 const TopicBasedQuizes=({quiz})=>{
 
     const {name,question,correctAnswer,options}=quiz
