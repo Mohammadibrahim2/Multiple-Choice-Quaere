@@ -3,26 +3,27 @@ import Options from "../Options/Options";
 import { EyeIcon,ArrowRightIcon} from '@heroicons/react/24/solid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const TopicBasedQuizes=({quiz})=>{
 
-    const {name,question,correctAnswer,options}=quiz
+  const {name,question,correctAnswer,options}=quiz;
+   
 
-    const notify = () => toast(correctAnswer);
   
-    const testResult=(ans)=>{
-        const rightAwnser=ans.option
+  const[matchingResult,setMatchResult]=useState();
+  console.log(matchingResult)
 
-console.log(rightAwnser)
-console.log(correctAnswer)
+   const testResult=(ans)=>{
+  const rightAwnser=ans.option
 if(rightAwnser===correctAnswer){
-    const notify = () => toast("The answer is correct.");
+  setMatchResult("The answer is correct.")
 }
 else{
-    const notify = () => toast("The answer is incorrect.")
+  setMatchResult("The answer is wrong.")
 }
+};
 
-    };
-
+    const notify = () => toast(correctAnswer);
 
 return(
     <div>
@@ -44,7 +45,9 @@ return(
 options.map(option=><Options
  option={option}
  testResult={testResult}
- notify={notify}
+
+ matchingResult={matchingResult}
+
 
  ></Options>)
 }

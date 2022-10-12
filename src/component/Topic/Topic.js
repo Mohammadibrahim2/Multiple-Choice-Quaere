@@ -15,10 +15,10 @@ return(
         <img src={logo}></img>
         <div className="Topics-details">
             <h2>{name}</h2>
-            <h3>Quize:{total}</h3>
+            <h3 className="my-2">Quize:{total}</h3>
             <Link to={`/home/${id}`}>
-              <button className="button flex justify-between"><span>{name}</span>
-              <ArrowRightIcon  className="w-6 h-6"></ArrowRightIcon> </button></Link>
+              <button className="button flex justify-arround align-baseline"><span className="me-2">{name}</span>
+              <ArrowRightIcon  className="w-6 h-5 "></ArrowRightIcon> </button></Link>
            
 
         </div>

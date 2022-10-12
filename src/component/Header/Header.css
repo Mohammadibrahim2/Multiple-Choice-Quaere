@@ -1,6 +1,5 @@
 .Navigation{
     height: 80px;
-
     background-image:linear-gradient(to bottom  right, #10255c,#38b3dd);
     display: flex;
     width: 100%;
@@ -14,12 +13,12 @@
     
 }
 .Navigation h2{
-    font-size: 19x;
+    font-size: 24x;
 }
 nav a{
     text-decoration: none;
     color:#fff;
-    font-size: 20px;
+    font-size: 17px;
     margin-right: 40px;
     padding: 5px 10px;
 

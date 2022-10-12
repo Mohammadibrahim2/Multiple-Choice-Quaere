@@ -4,8 +4,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Options=({option,testResult,notify})=>{
-
+const Options=({option,testResult,matchingResult})=>{
+ 
+console.log(matchingResult)
+ const notify = () => toast(matchingResult);
 return(
 
     <div>
@@ -13,9 +15,10 @@ return(
 
 <button onClick={()=>testResult({option})}>
 <button onClick={notify}>
+<p><input type="radio"value="option"/>{option}
+</p></button>
 
-<p><input type="checkbox"/>{option}</p>
-</button>
+
 </button>
 <ToastContainer />
 
