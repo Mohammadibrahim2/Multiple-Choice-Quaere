@@ -14,7 +14,7 @@ const Stat=()=>{
 
 <div>
    
- <div className="Rechart">
+ <div className="Rechart" id="stat">
 
     <AreaChart
           width={450}
